@@ -1,1 +1,150 @@
 /* Add CSS styling here */
+/*reset*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /* border: 1px solid black; */
+}
+
+header {
+  background-color: lightgrey;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.topsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.description {
+  padding: 20px;
+  width: 50%;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 20px;
+}
+.portfolio-element {
+  text-align: center;
+}
+
+button {
+  background-color: whitesmoke;
+  color: black;
+  border: black solid 1px;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: white solid 1px;
+}
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+footer {
+  background-color: lightgrey;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  button {
+    /* decreasing the width so the button is a good size*/
+    width: 36%;
+    margin: 1% 0;
+  }
+  .topsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topsection div {
+    width: 90%;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    /*flex-wrap will put them on individual lines*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .row div {
+    /*making the width between 30-50 will make 2 items appear per line. any smaller and more will appear, any bigger and only 1 will appear
+      */
+    width: 40%;
+    margin: 4% 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    /* flex-direction makes the header stacked onto the nav*/
+    flex-direction: column;
+    /* justify-content:text-decoration: center & align-items:center; will center the header in a column;*/
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    /* flex direction:column will make the nav stacked on top of each other */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  button {
+    /* decreasing the width so the button is a good size*/
+    width: 36%;
+    margin: 1% 0;
+  }
+  .topsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topsection div {
+    width: 90%;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    /*flex-wrap will put them on individual lines*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .row div {
+    /*making the width between 30-50 will make 2 items appear per line. any smaller and more will appear, any bigger and only 1 will appear
+      */
+    width: 40%;
+    margin: 4% 0;
+  }
+} ;
